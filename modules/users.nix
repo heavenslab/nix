@@ -1,6 +1,7 @@
 { pkgs, ... }:
 
 {
+  users.mutableUsers = false;
   programs.zsh.enable = true;
 
   users.users.rafael = {
@@ -8,6 +9,6 @@
     description = "Rafael";
     extraGroups = [ "networkmanager" "wheel" ];
     shell = pkgs.zsh;
-    hashedPassword = "$5$Nix2026$2MsSiPUfhnCWlLe3Ujkn1ii9Y.Bb4MI0y1Ab3eaAPr6";
+    hashedPassword = "$5$rounds=535000$Nix2026$K2CehYGJB68o.6GfXpDhfM8pJz5mj29qxLaGxL60zn1";
   };
 }
